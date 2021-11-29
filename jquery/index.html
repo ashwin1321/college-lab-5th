@@ -1,55 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jquery basic effects</title>
-    <script src="./jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#hide').click(function(){
-                $('.main').hide(3000,function(){
-                    // alert('This is hide effect')
-                });
-            });
-            $('#show').click(function(){
-                $('.main').show();
-            });
-
-            $("#toggle").click(function(){
-                $('.main').toggle();
-            })
-
-            $('#fadeout').click(function(){
-                $('.main').fadeOut(3000);
-            });
-
-            $('#fadein').click(function(){
-                $('.main').fadeIn(3000);
-            });
-            $('#fadetoggle').click(function(){
-                $('.main').fadeToggle(3000);
-            });
-
-            $('#slidetoggle').click(function(){
-                $('.main').slideToggle(3000);
-            });
-
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jquery basic effects</title>
+  <script src="./jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#hide").click(function () {
+        $(".main").hide(3000, function () {
+          // alert('This is hide effect')
         });
-    </script>
+      });
+      $("#show").click(function () {
+        $(".main").show();
+      });
+
+      $("#toggle").click(function () {
+        $(".main").toggle();
+      });
+
+      $("#fadeout").click(function () {
+        $(".main").fadeOut(3000);
+      });
+
+      $("#fadein").click(function () {
+        $(".main").fadeIn(3000);
+      });
+      $("#fadetoggle").click(function () {
+        $(".main").fadeToggle(3000);
+      });
+
+      $("#slidetoggle").click(function () {
+        $(".main").slideToggle(3000);
+      });
+
+      $("#append").click(function () {
+        $("ol").append('<li>mango</li>')          // append le paxadi add garxa
+      });
+      $("#prepend").click(function () {
+        $("ol").prepend('<li>cat</li>')           // prepend le agadi add garxa
+      });
+
+    });
+  </script>
 </head>
+
 <body>
-    <center>
-        <button id="hide">hide</button>
-        <button id="show">show</button>
-        <button id="toggle">toggle</button>
-        <button id="fadeout">fadeout</button>
-        <button id="fadein">fadein</button>
-        <button id="fadetoggle">fadetoggle</button>
-        <button id="slidetoggle">slidetoggle</button>
-        <div class="main" style=" background-color: black; height:300px; width: 500ox;"></div>
-    </center>
+  <center>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">toggle</button>
+    <button id="fadeout">fadeout</button>
+    <button id="fadein">fadein</button>
+    <button id="fadetoggle">fadetoggle</button>
+    <button id="slidetoggle">slidetoggle</button>
+    <div class="main" style="background-color: black; height: 300px; width: 500ox"></div>
+
+    <ol>
+      <li>apple</li>
+    </ol>
+
+    <button id="append">append</button>
+    <button id="prepend">prepend</button>
+  </center>
 </body>
+
 </html>
