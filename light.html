@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb</title>
+    <script>
+        function on()
+        {
+            document.getElementById('img').src="pic_bulbon.gif"
+        }
+        function off()
+        {
+            document.getElementById('img').src="pic_bulboff.gif"
+        }
+    </script>
+
+    <style>
+      .container{
+      display: block;
+      text-align: center;
+      }
+
+      button{
+        border: 2px solid rgb(104, 129, 54);
+        background-color: rgb(236, 187, 97);
+        border-radius: 8px;
+      }
+      button:hover{
+        background-color: rgb(108, 129, 66);
+        color: rgb(236, 187, 97);
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div><img id="img" src="pic_bulboff.gif" ></div>
+    <div>
+    <button onclick="on()" type="button" name="button">ON</button>
+    <button onclick="off()" type="button" name="button">OFF</button>
+    </div>
+  </div>
+  
+</body>
+</html>
