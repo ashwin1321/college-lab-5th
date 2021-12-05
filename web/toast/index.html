@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast</title>
+    <link rel="stylesheet" href="../jquery_plugins/Zoom and toast/jquery.toast.min.css">
+    <script src="../jquery_plugins/Zoom and toast/toast/jquery-1.11.2.min.js"></script>
+    <script src="../jquery_plugins/Zoom and toast/jquery.toast.min.js"></script>
+    <!-- <script src="../jquery/jquery-3.6.0.min.js"></script> -->
+    <script>
+        $(document).ready(function(){
+            $.toast({
+                text:"this is a demo of toast message",
+                heading:'this is heading for the toast message',
+                icon:'success',
+                position:'top-left',
+                hideAfter:5000,
+            })
+
+        })
+        
+        $(document).ready(function(){
+            $.toast({
+                text: "this is second demo of toast message",
+                heading: "this is heading for second toast message",
+                icon:'error',
+                hideAfter: 10000,
+            })
+        })
+
+        $(document).ready(function(){
+            $.toast({
+                text:"this is third demo of toast message",
+                heading: "this is heading for third toast message",
+                icon:'warning',
+                hideAfter: 15000,
+            })
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
