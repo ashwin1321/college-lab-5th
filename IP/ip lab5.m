@@ -1,0 +1,16 @@
+clc;
+clear all;
+close all;
+a = imread('C:\Users\ashwi\Desktop\abc.jfif');
+subplot(1,3,1);
+imshow(a);
+title('original image');
+h = fspecial('gaussian'); 
+b = imfilter(a,h); 
+subplot(1,3,2);
+imshow(b);
+title('smoothened image');
+c = imsharpen(a);
+subplot(1,3,3);
+imshow(c);
+title('sharpened image');
