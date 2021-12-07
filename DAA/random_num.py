@@ -1,7 +1,9 @@
 import random
 randomlist = []
-for i in range(0,1000):
-    n = random.randint(0,100)
+for i in range(0,10000):
+    n = random.randint(0,1000)
     randomlist.append(n)
-    a = " ".join(map(str,randomlist)) 
-print(randomlist)
+    a = randomlist
+    a.sort()
+print(a)
+
