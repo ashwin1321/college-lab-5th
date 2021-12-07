@@ -42,6 +42,7 @@ int main()
     int n, i;
     printf("Enter the size of array: ");
     scanf("%d", &n);
+    // n = 100;
     int A[n];
     printf("Enter elements of array: \n");
     for (i = 0; i < n; i++)
