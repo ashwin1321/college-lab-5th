@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        
+        .card {
+            text-align: center;
+            justify-content: center;
+            padding: 23px 12px;
+            margin: 23px 10px;
+            background-color: burlywood;
+            box-shadow: 10px 10px rgb(184, 154, 24);
+            box-shadow: 10px 10px 25px rgb(184, 154, 24);
+            box-shadow: 10px 10px 25px 2px rgba(180, 135, 9, 0.8);
+        }
+        
+        .card h2,
+        p {
+            text-shadow: 1px 1px 2px rgb(75, 68, 168);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod libero neque quisquam est illo facere commodi quo, dicta molestiae doloremque, deserunt vitae rerum? Id explicabo laudantium ducimus assumenda repellat fuga accusantium recusandae
+                rerum modi?</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsum illum culpa quo officia, deserunt architecto repellendus voluptates distinctio sapiente obcaecati labore facilis qui dignissimos explicabo. Aliquid illo sint, voluptas
+                aliquam rerum accusamus quis?</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tempora ratione fuga fugit excepturi impedit modi accusantium explicabo, minima repudiandae sunt! Nostrum rem corporis rerum, ab quaerat fuga quas minima vitae incidunt expedita
+                eaque.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

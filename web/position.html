@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3400px;
+        }
+        
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        
+        #box1 {
+            /*  CSS Position types:  static(default), absolute, relative, fixed and sticky*/
+            /* relative: position relative to its normal position, we use top left ,etc properties. and leace a gap at its posn */
+            /* absolute: first parent ko position ko relative hunxa */
+            /* fixed: postion fixed hunxa scroll garda pani */
+            /* sticky: position stick in same place irrespective to scroll */
+            /* position: absolute;
+             top: 24px;
+            left: 124px; */
+            /* 
+            position: fixed;
+            right: 4px;
+            bottom: 2px; */
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box0"> 0</div>
+        <div class="box" id="box1">Chat with us</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+    </div>
+
+</body>
+
+</html>

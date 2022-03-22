@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Navigating the DOM</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Contact US</li>
+        </ul>
+
+    </div>
+    <div class="container">
+        Another container
+    </div>
+</body>
+<script>
+    let main = document.getElementById('main');
+    console.log(main);
+    let nav = document.getElementById('nav');
+    console.log(nav);
+
+    console.log(nav.innerHTML);
+    nav.innerHTML = "<li>Dynamic Programming</li>";
+    let containers = document.getElementsByClassName("container");
+    console.log(containers);
+    console.log(containers[0]);
+
+    let sel = document.querySelector('.container');
+    console.log("selector returns ", sel);
+    let se = document.querySelector('#nav>li');
+    let sela = document.querySelectorAll('.container');
+    console.log("selector returns ", sela);
+</script>
+
+</html>

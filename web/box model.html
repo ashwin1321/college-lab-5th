@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS box model, margin and padding</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: rgb(211, 89, 211);
+        }
+        
+        .container {
+            background-color: rgb(53, 46, 129);
+            border: 3px solid rgb(156, 126, 185);
+            padding: 20px 15px;
+            margin: 34px 23px;
+            border-radius: 23px;
+            width: 533px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2> This is the header.</h2>
+        <p id="first"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga corporis ut, nulla vel minus tempore alias unde omnis iusto illum sunt fugit maxime ea?</p>
+    </div>
+    <div class="container">
+        <h2> This is the header.</h2>
+        <p id="second"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga corporis ut, nulla vel minus tempore alias unde omnis iusto illum sunt fugit maxime ea?</p>
+    </div>
+    <div class="container">
+        <h2> This is the header.</h2>
+        <p id="third"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga corporis ut, nulla vel minus tempore alias unde omnis iusto illum sunt fugit maxime ea?</p>
+    </div>
+
+</body>
+
+</html>

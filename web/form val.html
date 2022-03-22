@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+    <title>js form validation </title>
+    <script src="./formval.js"></script>
+</head>
+
+<body>
+    <form action="script.js">
+        Enter name:<br>
+        <input type="text" id="uname" placeholder="Enter name" autofocus onkeyup="nameValid()">
+        <span id="errname"></span>
+        <br><br> Enter phone number:<br>
+        <input type="text" id="phno" placeholder="Enter your phone number" onkeyup="numberValid()">
+        <span id="errnumber"></span>
+        <br><br> Enter email:<br>
+        <input type="email" id="email" placeholder="Enter your email" onkeyup='validemail()'>
+        <span id="erremail"></spawn>
+        <br><br>
+        
+        Enter password:<br>
+        <input type="password" id="psw" placeholder="Enter your password" onkeyup="validPassword()">
+        <span id="errpassword"></span>
+        <br><br> Gender:
+        <input type="radio" id='gender'>Male
+        <input type="radio" id='gender'>Female
+        <input type="radio" id='gender'>Other
+        <span id="errradio"></span>
+        <br><br> Enter comment:<br>
+        <textarea id="ucomment"></textarea>
+        <span id="errcomment"></span><br><br>
+
+        <input type="submit" id="submit" value="submit">
+        <input type="reset" id="reset" value="reset">
+
+    </form>
+</body>
+
+</html>
