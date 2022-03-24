@@ -1,13 +1,10 @@
 # Encryption and Decryption
-
 def encryption(key,plaintext):
-    plaintext=plaintext.lower()
-    
+    plaintext=plaintext.lower()  
     cipherText=''
     for i in range(len(plaintext)):
 
-#         print(plaintext[i])
-
+#print(plaintext[i])
         if plaintext[i]>='a' and plaintext[i]<='z':
             base='a'
         if plaintext[i] ==' ':
@@ -15,18 +12,15 @@ def encryption(key,plaintext):
             cipherText=cipherText+plaintext[i]
         else:
             encrypt= chr((ord(plaintext[i])-ord(base)+key)%26 +ord(base))
-            cipherText=cipherText+ (encrypt)
-       
+            cipherText=cipherText+ (encrypt)      
     return cipherText
 
 def decryption(key,cipherText):
-    cipherText=cipherText.lower()
-    
+    cipherText=cipherText.lower()  
     plainText=''
     for i in range(len(cipherText)):
 
-#         print(cipherText[i])
-
+#print(cipherText[i])
         if cipherText[i]>='a' and cipherText[i]<='z':
             base='a'
         if cipherText[i] ==' ':
@@ -34,8 +28,7 @@ def decryption(key,cipherText):
             plainText=plainText+cipherText[i]
         else:
             encrypt= chr((ord(cipherText[i])-ord(base)-key)%26 +ord(base))
-            plainText= plainText+ (encrypt)
-       
+            plainText= plainText+ (encrypt)      
     return plainText
 
 user = str(input("Enter the plain text: "))
