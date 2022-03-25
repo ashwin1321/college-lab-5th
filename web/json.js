@@ -1,8 +1,8 @@
 let jsonobj = {
-    name: 'Ashwin Khatiwada',
+    name: 'Abced',
     faculty: 'Computer Science',
     interest: 'nothing',
-    github: 'Github.com/ashwin1321'
+    github: 'Github.com'
 }
 
 console.log(jsonobj);
@@ -11,7 +11,7 @@ let myJson = JSON.stringify(jsonobj);
 console.log(myJson);
 
 // replacing the element in the string
-myJson = myJson.replace("Ashwin", 'Ash');
+myJson = myJson.replace("Abced", 'fghik');
 console.log(myJson);
 
 // converting string back to object

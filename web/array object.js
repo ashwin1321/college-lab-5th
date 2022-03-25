@@ -9,9 +9,7 @@ console.log(employee["salary"]);
 
 
 // Array
-
 let names = new Array(1, 2, 4, 'Ashwin', undefined);
-
 names.push("Pushed_item");
 console.log(names);
 names.pop();

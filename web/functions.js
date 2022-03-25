@@ -2,7 +2,6 @@ let name0 = "Ashwin";
 let name1 = "A";
 let name2 = "As";
 let name3 = "Ash";
-
 // FUNCTIONS 
 function greet(name, greeting) {
     console.log(`${greeting} ${name}. ${name} is a good boy.`)

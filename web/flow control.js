@@ -1,10 +1,10 @@
 let age = 5;
 if (age > 18) {
-    console.log('You can drink Alcohol');
+    console.log('You can drink water');
 } else if (age == 15) {
-    console.log('Gayera sut Nibba Mug');
+    console.log('go sleep');
 } else {
-    console.log("Drink water Biatch!");
+    console.log("Whatever");
 }
 
 
