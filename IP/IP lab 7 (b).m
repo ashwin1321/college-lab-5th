@@ -1,6 +1,6 @@
 %  Implementation of global thresholding at Image Segmentation.
 
-cls;
+clc;
 close all;
 clear all;
 
